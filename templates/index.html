@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input and Output</title>
+    <style>
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  </style>
+</head>
+<body>
+  
+    <form action="/" method="POST">
+    <div style='background-color: lightcoral; width: 350px; padding: 7px 12px 7px 12px'>
+        <div style='font-size: 20px; text-align: center; font-weight: bolder; margin-bottom: 10px;'> * 심장 질환 예측 설문 * </div>
+        <div style='background-color: whitesmoke; padding: 12px 12px 12px 12px; margin-top: 5px;'>
+
+          <div style="font-weight: bolder;">1 당신의 BMI를 적어주세요</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q1_a"><input type="float" name="Q1" id="Q1_a"></label></li></div>
+
+          <div style="font-weight: bolder;">2 흡연 여부</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q2_1"><input type="radio" name="Q2" id="Q2_1" value="Yes"> 네</label></li>
+          <li><label for="Q2_2"><input type="radio" name="Q2" id="Q2_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">3 일주일에 술을 많이 마시나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q3_1"><input type="radio" name="Q3" id="Q3_1" value="Yes"> 네</label></li>
+          <li><label for="Q3_2"><input type="radio" name="Q3" id="Q3_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">4 뇌졸증을 앓고 있었던 적이 있나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q4_1"><input type="radio" name="Q4" id="Q4_1" value="Yes"> 네</label></li>
+          <li><label for="Q4_2"><input type="radio" name="Q4" id="Q4_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">5 당신은 신체적으로 건강하다고 생각하시나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+            <li><label for="Q5_a"><input type="float" name="Q5" id="Q5_a">0~30 점수를 써주세요</label></li></div>
+
+          <div style="font-weight: bolder;">6 당신은 정신적으로 건강하다고 생각하시나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+            <li><label for="Q6_a"><input type="float" name="Q6" id="Q6_a">0~30 점수를 써주세요</label></li></div>
+
+          <div style="font-weight: bolder;">7 힘들게 걷거나 뛰는 운동을 하시나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q7_1"><input type="radio" name="Q7" id="Q7_1" value="Yes"> 네</label></li>
+          <li><label for="Q7_2"><input type="radio" name="Q7" id="Q7_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">8 성별</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q8_1"><input type="radio" name="Q8" id="Q8_1" value="Yes"> 남성</label></li>
+          <li><label for="Q8_2"><input type="radio" name="Q8" id="Q8_2" value="No"> 여성</label></li></div>
+
+          <div style="font-weight: bolder;">9 나이</div>
+          <div style="list-style: none; margin-top: 7px;">
+            <li><label for="Q9_a"><input type="text" name="Q9" id="Q9_a"></label></li></div>
+
+          <div style="font-weight: bolder;">10 인종</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q10_1"><input type="radio" name="Q10" id="Q10_1" value="White"> 백인</label></li>
+          <li><label for="Q10_2"><input type="radio" name="Q10" id="Q10_2" value="Black"> 흑인</label></li>
+            <li><label for="Q10_a"><input type="text" name="Q10" id="Q10_a"></label></li></div>
+
+          <div style="font-weight: bolder;">11 당뇨병을 앓고 계셨던 적이 있나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q11_1"><input type="radio" name="Q11" id="Q11_1" value="Yes"> 네</label></li>
+          <li><label for="Q11_2"><input type="radio" name="Q11" id="Q11_2" value="No"> 아니오</label></li>
+
+          <div style="font-weight: bolder;">12 지난 한달 돌안 신체 활동을 많이 하시는 편인가요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q12_1"><input type="radio" name="Q12" id="Q12_1" value="Yes"> 네</label></li>
+          <li><label for="Q12_2"><input type="radio" name="Q12" id="Q12_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">13 당신은 전반적으로 건강하다고 생각하시나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+            <li><label for="Q13_a"><input type="int" name="Q13" id="Q13_a">1~5점을 써주세요 </label></li></div>
+
+          <div style="font-weight: bolder;">14 수면시간</div>
+          <div style="list-style: none; margin-top: 7px;">
+            <li><label for="Q14_a"><input type="float" name="Q14" id="Q14_a">시간단위로 써주세요</label></li></div>
+
+          <div style="font-weight: bolder;">15 폐렴을 앓고 계셨던 적이 있나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q15_1"><input type="radio" name="Q15" id="Q15_1" value="Yes"> 네</label></li>
+          <li><label for="Q15_2"><input type="radio" name="Q15" id="Q15_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">16 신장 관련 질환을 앓고 계셨던 적이 있나요? </div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q16_1"><input type="radio" name="Q16" id="Q16_1" value="Yes"> 네</label></li>
+          <li><label for="Q16_2"><input type="radio" name="Q16" id="Q16_2" value="No"> 아니오</label></li></div>
+
+          <div style="font-weight: bolder;">17 피부암을 앓고 계셨던 적이 있나요?</div>
+          <div style="list-style: none; margin-top: 7px;">
+          <li><label for="Q17_1"><input type="radio" name="Q17" id="Q17_1" value="Yes"> 네</label></li>
+          <li><label for="Q17_2"><input type="radio" name="Q17" id="Q17_2" value="No"> 아니오</label></li></div>
+
+          </div></div>
+          <div style="text-align: center; margin-top: 15px;">
+            <button type="submit" style="font-size: 20px; padding: 7px; width: 30%;"> 제 출 </button>
+          </div>
+        </form>
+</body>
+</html>
