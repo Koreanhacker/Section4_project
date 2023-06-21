@@ -67,7 +67,7 @@ def result():
        'PhysicalActivity', 'GenHealth', 'SleepTime', 'Asthma', 'KidneyDisease',
        'SkinCancer']
     
-   
+    est.to_csv('est.csv', mode='a', header=False, index=False)
 
     est_piped = model.predict(est)
     
