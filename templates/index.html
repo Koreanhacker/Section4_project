@@ -11,8 +11,7 @@
   </style>
 </head>
 <body>
-  
-    <form action="/" method="POST">
+    <form action="/submit" method="POST">
     <div style='background-color: lightcoral; width: 350px; padding: 7px 12px 7px 12px'>
         <div style='font-size: 20px; text-align: center; font-weight: bolder; margin-bottom: 10px;'> * 심장 질환 예측 설문 * </div>
         <div style='background-color: whitesmoke; padding: 12px 12px 12px 12px; margin-top: 5px;'>
@@ -38,11 +37,13 @@
 
           <div style="font-weight: bolder;">5 당신은 신체적으로 건강하다고 생각하시나요?</div>
           <div style="list-style: none; margin-top: 7px;">
-            <li><label for="Q5_a"><input type="float" name="Q5" id="Q5_a">0~30 점수를 써주세요</label></li></div>
+            <div style="font-weight: bolder;">0~30 점수를 써주세요</div>
+            <li><label for="Q5_a"><input type="float" name="Q5" id="Q5_a"></label></li></div>
 
           <div style="font-weight: bolder;">6 당신은 정신적으로 건강하다고 생각하시나요?</div>
           <div style="list-style: none; margin-top: 7px;">
-            <li><label for="Q6_a"><input type="float" name="Q6" id="Q6_a">0~30 점수를 써주세요</label></li></div>
+            <div style="font-weight: bolder;">0~30 점수를 써주세요</div>
+            <li><label for="Q6_a"><input type="float" name="Q6" id="Q6_a"></label></li></div>
 
           <div style="font-weight: bolder;">7 힘들게 걷거나 뛰는 운동을 하시나요?</div>
           <div style="list-style: none; margin-top: 7px;">
@@ -56,7 +57,7 @@
 
           <div style="font-weight: bolder;">9 나이</div>
           <div style="list-style: none; margin-top: 7px;">
-            <li><label for="Q9_a"><input type="text" name="Q9" id="Q9_a"></label></li></div>
+            <li><label for="Q9_a"><input type="int" name="Q9" id="Q9_a"></label></li></div>
 
           <div style="font-weight: bolder;">10 인종</div>
           <div style="list-style: none; margin-top: 7px;">
@@ -76,11 +77,13 @@
 
           <div style="font-weight: bolder;">13 당신은 전반적으로 건강하다고 생각하시나요?</div>
           <div style="list-style: none; margin-top: 7px;">
-            <li><label for="Q13_a"><input type="int" name="Q13" id="Q13_a">1~5점을 써주세요 </label></li></div>
+            <div style="font-weight: bolder;">1~5점을 써주세요</div>
+            <li><label for="Q13_a"><input type="int" name="Q13" id="Q13_a"> </label></li></div>
 
-          <div style="font-weight: bolder;">14 수면시간</div>
+          <div style="font-weight: bolder;">14 하루에 수면시간을 적어주세요</div>
           <div style="list-style: none; margin-top: 7px;">
-            <li><label for="Q14_a"><input type="float" name="Q14" id="Q14_a">시간단위로 써주세요</label></li></div>
+            <div style="font-weight: bolder;">시간단위로 써주세요</div>
+            <li><label for="Q14_a"><input type="float" name="Q14" id="Q14_a"></label></li></div>
 
           <div style="font-weight: bolder;">15 폐렴을 앓고 계셨던 적이 있나요?</div>
           <div style="list-style: none; margin-top: 7px;">

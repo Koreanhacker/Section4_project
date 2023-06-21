@@ -146,8 +146,8 @@ y_val_pred = logistic.predict(X_val_ohe)
 
 
 
-with open('model.pkl','wb') as pickle_file:
-    pickle.dump(logistic, pickle_file)
+# with open('model.pkl','wb') as pickle_file:
+#     pickle.dump(logistic, pickle_file)
 
 
 
